@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     var randomDiceIndex1 :Int = 0
     var randomDiceIndex2 :Int = 0
+    var soundeffect: AVAudioPlayer = AVAudioPlayer()
     
     let diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
@@ -22,6 +24,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let musicFile = Bundle.main.path(forResource: "bleep", ofType: ".wav")
+        do {
+            try soundeffect = AVAudioPlayer (contentsOf:URL (fileURLWithPath: musicFile!))
+        }
+        catch {
+            print (error)
+        }
+        
+        
         updateDiceImages()
         updateDiceSum()
         
@@ -31,6 +42,7 @@ class ViewController: UIViewController {
         
         updateDiceImages()
         updateDiceSum()
+        soundeffect.play()
     }
     
     func updateDiceImages(){
