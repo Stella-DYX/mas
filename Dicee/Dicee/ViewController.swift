@@ -48,5 +48,16 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         updateDiceImages()
     }
+    
+    @IBAction func showAlert() {
+        let message = "The sum of the two dices are: \(randomDiceIndex1 + randomDiceIndex2 + 2)"
+        let alert = UIAlertController(title: "Hello",
+                                      message: message,
+                                      preferredStyle: .alert)
+        let action = UIAlertAction(title: "Awesome", style: .default,
+                                   handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 }
 
