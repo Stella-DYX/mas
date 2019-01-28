@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE28BA0057B5AFE56B38A49C /* Pods_Dicee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFEB0D49B8F7056F1FDEAE /* Pods_Dicee.framework */; };
 		E31489F621FD443000840758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31489F521FD443000840758 /* AppDelegate.swift */; };
 		E31489F821FD443000840758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31489F721FD443000840758 /* ViewController.swift */; };
 		E31489FB21FD443000840758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31489F921FD443000840758 /* Main.storyboard */; };
 		E31489FD21FD443200840758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31489FC21FD443200840758 /* Assets.xcassets */; };
 		E3148A0021FD443200840758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31489FE21FD443200840758 /* LaunchScreen.storyboard */; };
+		E395E1F721FE7176001164FD /* bleep.wav in Resources */ = {isa = PBXBuildFile; fileRef = E395E1F621FE7176001164FD /* bleep.wav */; };
+		E395E1F921FE733F001164FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E395E1F821FE733F001164FD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AE1B6EE670F7657CB2C57CE /* Pods-Dicee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dicee/Pods-Dicee.release.xcconfig"; sourceTree = "<group>"; };
+		4839382A097E65057E60968C /* Pods-Dicee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dicee/Pods-Dicee.debug.xcconfig"; sourceTree = "<group>"; };
+		C2FFEB0D49B8F7056F1FDEAE /* Pods_Dicee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31489F221FD443000840758 /* Dicee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31489F521FD443000840758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E31489F721FD443000840758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		E31489FC21FD443200840758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E31489FF21FD443200840758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3148A0121FD443200840758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E395E1F621FE7176001164FD /* bleep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bleep.wav; sourceTree = "<group>"; };
+		E395E1F821FE733F001164FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE28BA0057B5AFE56B38A49C /* Pods_Dicee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A77304819A05A94017F9573 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4839382A097E65057E60968C /* Pods-Dicee.debug.xcconfig */,
+				1AE1B6EE670F7657CB2C57CE /* Pods-Dicee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDA7CBAB3E606C1C3258FC9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2FFEB0D49B8F7056F1FDEAE /* Pods_Dicee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E31489E921FD443000840758 = {
 			isa = PBXGroup;
 			children = (
 				E31489F421FD443000840758 /* Dicee */,
 				E31489F321FD443000840758 /* Products */,
+				0A77304819A05A94017F9573 /* Pods */,
+				BDA7CBAB3E606C1C3258FC9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +84,11 @@
 			children = (
 				E31489F521FD443000840758 /* AppDelegate.swift */,
 				E31489F721FD443000840758 /* ViewController.swift */,
+				E395E1F621FE7176001164FD /* bleep.wav */,
 				E31489F921FD443000840758 /* Main.storyboard */,
 				E31489FC21FD443200840758 /* Assets.xcassets */,
 				E31489FE21FD443200840758 /* LaunchScreen.storyboard */,
+				E395E1F821FE733F001164FD /* GoogleService-Info.plist */,
 				E3148A0121FD443200840758 /* Info.plist */,
 			);
 			path = Dicee;
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3148A0421FD443200840758 /* Build configuration list for PBXNativeTarget "Dicee" */;
 			buildPhases = (
+				86BC5F724067DFBD4609F8F8 /* [CP] Check Pods Manifest.lock */,
 				E31489EE21FD443000840758 /* Sources */,
 				E31489EF21FD443000840758 /* Frameworks */,
 				E31489F021FD443000840758 /* Resources */,
+				DBA1F4BDF7426FB575189DF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +158,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3148A0021FD443200840758 /* LaunchScreen.storyboard in Resources */,
+				E395E1F721FE7176001164FD /* bleep.wav in Resources */,
+				E395E1F921FE733F001164FD /* GoogleService-Info.plist in Resources */,
 				E31489FD21FD443200840758 /* Assets.xcassets in Resources */,
 				E31489FB21FD443000840758 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86BC5F724067DFBD4609F8F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dicee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBA1F4BDF7426FB575189DF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dicee/Pods-Dicee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dicee/Pods-Dicee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E31489EE21FD443000840758 /* Sources */ = {
@@ -283,6 +366,7 @@
 		};
 		E3148A0521FD443200840758 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4839382A097E65057E60968C /* Pods-Dicee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +375,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.Dicee.Dicee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.Dicee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +384,7 @@
 		};
 		E3148A0621FD443200840758 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE1B6EE670F7657CB2C57CE /* Pods-Dicee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.Dicee.Dicee;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gatech.Dicee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
